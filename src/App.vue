@@ -4,25 +4,22 @@ descr: App.vue是项目的主组件，页面入口文件 ，所有页面都在Ap
        2. 主组件app.vue调用其他组件，构建页面
 -->
 <template>
-  <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/">About</router-link>
-  </nav>
-  <router-view>
-
-  </router-view>
+  <HelloWorld></HelloWorld>
 </template>
 
+<script>
+ import HelloWorld from "./components/HelloWorld.vue";
+ export default {
+   name: 'App',
+   data(){
+     return {}
+   },
+   components:{
+     HelloWorld: HelloWorld
+   }
+ }
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>

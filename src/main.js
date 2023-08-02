@@ -17,6 +17,8 @@ const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
     app.component(key, component)
 }
+// // 2：全局注册组件
+// app.component('MLogin', Login)
 
 app.use(ElementPlus)
 app.mount('#app')
