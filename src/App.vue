@@ -1,19 +1,16 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
+<!--
+descr: App.vue是项目的主组件，页面入口文件 ，所有页面都在App.vue下进行切换，app.vue负责构建定义及页面组件归集
+       1. app.vue作为主组件在main.js中被使用
+       2. 主组件app.vue调用其他组件，构建页面
+-->
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <nav>
+    <router-link to="/">Home</router-link>
+    <router-link to="/">About</router-link>
+  </nav>
+  <router-view>
+
+  </router-view>
 </template>
 
 <style scoped>
