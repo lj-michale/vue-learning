@@ -5,6 +5,7 @@ descr: App.vue是项目的主组件，页面入口文件 ，所有页面都在Ap
 -->
 <template>
   <HelloWorld></HelloWorld>
+  <hello-world></hello-world>
 </template>
 
 <script>
@@ -21,5 +22,10 @@ descr: App.vue是项目的主组件，页面入口文件 ，所有页面都在Ap
 </script>
 
 <style scoped>
-
+  .box3{
+    width: 200px;
+    height: 100px;
+    background: blue;
+    color: white;
+  }
 </style>

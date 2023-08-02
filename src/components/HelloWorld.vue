@@ -1,15 +1,21 @@
 <template>
   <div>
     <h1 class="box1"><strong>{{message}}</strong></h1>
+    <OneComp class="box3"></OneComp>
+<!--    <one-comp></one-comp>-->
   </div>
 </template>
 
 <script>
+import OneComp from "./OneComp.vue";
 export default {
   name: "HelloWorld",
+  components:{
+    OneComp
+  },
   data() {
     return {
-      message:"hello world"
+      message:"vue3组件化开发入门"
     }
   }
 }
@@ -23,7 +29,7 @@ export default {
     padding: 100px;
     color: red;
     background: yellow;
-    font-size: 50px;
+    font-size: 20px;
   }
 
 </style>
