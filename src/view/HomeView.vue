@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img src="vue logo" src="../assets/vue.svg">
     <el-button>Default</el-button>
     <el-button type="primary">Primary</el-button>
     <el-button type="success">Success</el-button>
