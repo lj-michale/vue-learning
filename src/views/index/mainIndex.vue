@@ -39,7 +39,7 @@
             <p><span class="tit">下载地址</span>
                 <span class="gitbox">
                   <a target="_blank" href="https://github.com/xuxuxu-ni/vue-learning"><el-button type="primary" :icon="Download" size="small">github</el-button></a>
-                  <a target="_blank" href="https://gitee.com/nirongxu/vue-learning"><el-button type="primary" :icon="Download" size="small">码云</el-button></a>
+                  <a target="_blank" href="https://gitee.com/lj.michale/vue-learning"><el-button type="primary" :icon="Download" size="small">码云</el-button></a>
                 </span>
             </p>
           </div>

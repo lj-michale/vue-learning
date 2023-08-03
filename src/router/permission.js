@@ -62,7 +62,7 @@ router.afterEach(() => {
 })
 
 
-// //  真实使用 参照全栈项目 https://github.com/Nirongxu/nodePlatform-eggjs
+// //  真实使用 参照全栈项目 https://github.com/lj.michale/nodePlatform-eggjs
 // import router from "./index"
 // import store from "../vuex"
 // import fetchUser from "@/api/apis/user"
