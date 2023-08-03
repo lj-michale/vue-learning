@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import {reactive, ref, defineComponent, h, onMounted} from 'vue'
 import {ElMessage, ElNotification} from 'element-plus/es'
 import {store} from '@/store'
@@ -6,7 +6,7 @@ import router from '@/router'
 // import api from '@/api'
 
 export default defineComponent({
-  name: 'Login',
+  name: 'LOGIN',
   setup() {
     let storeData = store()
     let smdl = ref(true)
@@ -92,7 +92,7 @@ export default defineComponent({
             <template #header>
               <div class="card-header clearfix formTitlt">
                 <span>密码登录</span>
-                <span class="titIconbox">
+                  <span class="titIconbox">
                   <i class="iconfont xu-saomadenglu2 fa-lg iconcolor"></i>
                   <i class="iconfont xu-saomadenglu01 el-icon--right fa-lg pointer" @click="smdl = !smdl"></i>
                 </span>
@@ -104,8 +104,8 @@ export default defineComponent({
               </el-form-item>
               <el-form-item>
                 <el-input
-                    v-model="loginForm.password" type="password" size="large" auto-complete="off"
-                    placeholder="请输入登录密码"></el-input>
+v-model="loginForm.password" type="password" size="large" auto-complete="off"
+                          placeholder="请输入登录密码"></el-input>
               </el-form-item>
               <el-form-item>
                 <el-button class="subBtn" size="large" type="primary" @click="submitForm">登录</el-button>
@@ -293,4 +293,3 @@ export default defineComponent({
   }
 }
 </style>
-
