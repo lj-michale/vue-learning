@@ -1,12 +1,14 @@
 {
   "name": "vue-learning",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-decoupled-document": "^35.1.0",
@@ -15,7 +17,7 @@
     "echarts": "^5.3.3",
     "element-plus": "^2.2.17",
     "font-awesome": "^4.7.0",
-    "js-cookie": "^3.0.5",
+    "js-cookie": "^3.0.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.0.12",
     "sortablejs": "^1.15.0",
