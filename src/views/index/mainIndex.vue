@@ -46,16 +46,10 @@
         </div>
       </el-col>
     </el-row>
-    <el-row>
-      <el-col :span="24">
-        <line-echarts id="lineEcharts" height="300px"></line-echarts>
-      </el-col>
-    </el-row>
   </div>
 </template>
 
 <script setup lang="ts">
-import LineEcharts from '@/components/ECharts/lineEcharts.vue'
 import {Download} from '@element-plus/icons-vue'
 
 </script>
