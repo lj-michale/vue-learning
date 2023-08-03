@@ -38,8 +38,8 @@
             <p><span class="tit">主要特色</span>单页面 / 响应式 / 无限级菜单 / 权限管理 / 极简</p>
             <p><span class="tit">下载地址</span>
                 <span class="gitbox">
-                  <a target="_blank" href="https://github.com/xuxuxu-ni/vue3-elementPlus-admin"><el-button type="primary" :icon="Download" size="small">github</el-button></a>
-                  <a target="_blank" href="https://gitee.com/nirongxu/vue3-elementPlus-admin"><el-button type="primary" :icon="Download" size="small">码云</el-button></a>
+                  <a target="_blank" href="https://github.com/xuxuxu-ni/vue-learning"><el-button type="primary" :icon="Download" size="small">github</el-button></a>
+                  <a target="_blank" href="https://gitee.com/nirongxu/vue-learning"><el-button type="primary" :icon="Download" size="small">码云</el-button></a>
                 </span>
             </p>
           </div>

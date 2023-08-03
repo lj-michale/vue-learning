@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>Copyright © 2022 vue3-elementPlus-admin.</p>
+    <p>Copyright © 2022 vue-learning.</p>
   </div>
 </template>
 
