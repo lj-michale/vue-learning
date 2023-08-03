@@ -3,7 +3,7 @@
     <el-aside id="asideNav">
       <div class="logo-name">
         <p v-if="layoutState.layoutData.logoShow">XU</p>
-        <p v-else>vue-xuAdmin后台模板</p>
+        <p v-else>图灵计算后端管理系统</p>
       </div>
       <el-menu
           :default-active="$route.path" class="el-menu-vertical"
