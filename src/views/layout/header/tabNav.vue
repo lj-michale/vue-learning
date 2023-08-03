@@ -2,8 +2,7 @@
   <div>
     <div class="tabnavBox">
       <transition-group name="list" tag="ul">
-        <li
-v-for="(item, index) in layoutState.layoutData.tabnavBox" :key="item.title"
+        <li v-for="(item, index) in layoutState.layoutData.tabnavBox" :key="item.title"
             class="tabnav" :class="{ active: $route.path === item.path }" @contextmenu.prevent="openMenu(item,$event,index)">
           <router-link :to="item.path">{{ $t(`routeName.${item.title}`) }}</router-link>
           <el-icon v-if="index !== 0" @click="removeTab(item)"><CircleCloseFilled /></el-icon>
