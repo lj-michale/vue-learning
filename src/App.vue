@@ -3,31 +3,21 @@ descr: App.vue是项目的主组件，页面入口文件 ，所有页面都在Ap
        1. app.vue作为主组件在main.js中被使用
        2. 主组件app.vue调用其他组件，构建页面
 -->
+<script>
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+
+</script>
+
 <template>
-<!--  <HelloWorld></HelloWorld>-->
-<!--  <hello-world></hello-world>-->
-  <Index></Index>
-<!--  <HomeView> </HomeView>-->
+<!--    <HelloWorld></HelloWorld>-->
+  <!--  <hello-world></hello-world>-->
+  <transition name="fade" mode="out-in">
+    <router-view></router-view>
+  </transition>
+  <!--  <HomeView> </HomeView>-->
 </template>
 
-<script>
- import HelloWorld from "./components/HelloWorld.vue";
- import Index from "./view/Index.vue";
- import HomeView from "./view/HomeView.vue";
- import homeView from "./view/HomeView.vue";
-
- export default {
-   name: 'App',
-   data(){
-     return {}
-   },
-   components:{
-     HelloWorld: HelloWorld,
-     Index: Index,
-     HomeView: homeView
-   }
- }
-</script>
 
 <style lang="scss">
 body {
