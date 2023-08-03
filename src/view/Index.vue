@@ -1,12 +1,81 @@
 <!--
 description: 系统主页
 -->
-<script lang="ts">
-// import {reactive, ref, defineComponent, h, onMounted} from 'vue'
-// import {ElMessage, ElNotification} from 'element-plus/es'
-export default {
-  name: "Index"
-}
+<script >
+import {reactive, ref, defineComponent, h, onMounted} from 'vue'
+import {ElMessage, ElNotification} from 'element-plus/es'
+import {store} from '@/store'
+import router from '@/router'
+
+export default defineComponent({
+  name: 'Index',
+  setup() {
+    let storeData = store()
+    let smdl = ref(true)
+    let loginForm = reactive({
+      username: 'admin',
+      password: '123456'
+    })
+
+    let submitForm = () => {
+      if (loginForm.username === '' || loginForm.password === '') {
+        ElMessage({
+          showClose: true,
+          message: '账号或密码不能为空',
+          type: 'error'
+        })
+        return false
+      }
+      // 真实请求参考案例
+      // api.login.fetchLogin({
+      //   username: loginForm.username,
+      //   password: loginForm.password
+      // }).then((res: { data: { access_token: any } }) => {
+      //   storeData.setToken(res.data.access_token).then(() => {
+      //     router.push({path: '/'})
+      //   }).catch(res => {
+      //     ElMessage({
+      //       showClose: true,
+      //       message: res,
+      //       type: 'error'
+      //     })
+      // }).catch((err: any) => {
+      //   console.log(err)
+      // })
+
+      // 将 username 设置为 token 存储在 store，仅为测试效果，实际存储的 token 以后台返回为准
+      storeData.setToken(loginForm.username).then(() => {
+        router.push({path: '/'})
+      }).catch(res => {
+        ElMessage({
+          showClose: true,
+          message: res,
+          type: 'error'
+        })
+      })
+
+    }
+    let message = () => {
+      ElNotification({
+        title: '账号密码',
+        message: h('i', {style: 'color: teal'}, '账号密码可以随意填写，为了测试效果填写的账号将会被存储为临时假 token'),
+        duration: 6000
+      })
+    }
+
+    onMounted(() => {
+      message()
+    })
+
+    return {
+      smdl,
+      loginForm,
+      submitForm
+    }
+  }
+})
+
+
 </script>
 
 <template>
