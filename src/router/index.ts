@@ -67,7 +67,6 @@ const addRouter = [
         path: '/icon',
         iconCls: 'fa fa-life-ring', // 图标样式class
         name: routeName.builtInIcon,
-        component: Icon,
         children: []
       }
     ]
