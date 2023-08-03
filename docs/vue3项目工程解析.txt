@@ -11,7 +11,7 @@ src：项目开发主要文件夹
 —utils
 —views：界面组件
 —App.vue：根组件
-—main.js：入口文件
+—main.ts：入口文件
 —router.js：存放路由，实现界面跳转
 .gitignore：用来配置那些文件不归git管理
 package.json：项目配置和包管理文件（项目依赖和技术）

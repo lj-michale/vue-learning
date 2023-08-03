@@ -1,11 +1,12 @@
 /**
- * @description 路由入口
+ * @description 存放路由,实现界面跳转
  *
  * @author lj.michale
  * @date 2023-08-03
  * */
 
 import {RouteRecordRaw, createRouter, createWebHashHistory} from 'vue-router'
+import en from '../i18n/lang/en.js'
 import Login from '@/views/login/index.vue'
 
 // 不是必须加载的组件使用懒加载
