@@ -14,8 +14,6 @@ import Layout from '@/views/layout/layout.vue'
 import HomeMain from '@/views/index/mainIndex.vue'
 
 // 不是必须加载的组件使用懒加载
-const Icon = () => import('@/views/icon/index.vue')
-
 const routeName = en.routeName
 
 export type IRouter = {
