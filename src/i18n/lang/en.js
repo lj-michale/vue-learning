@@ -17,6 +17,8 @@ const en = {
     dataDevelopment: 'dataDevelopment',
     dataScheduler: 'dataScheduler',
     dataBi: 'dataBi',
+    monitor: 'monitor',
+    variable: 'variable',
     systemSettings: 'systemSettings',
     navMenu: 'navMenu'
   },

@@ -15,6 +15,8 @@ const cn = {
     dataDevelopment: '数据开发',
     dataScheduler: '数据调度',
     dataBi: '数据BI',
+    monitor: '服务监控',
+    variable: '变量管理',
     systemSettings: '系统设置',
     navMenu: '导航菜单'
   },

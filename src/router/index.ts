@@ -156,7 +156,51 @@ const addRouter = [
       }
     ]
   },
-
+  /* 数据BI */
+  {
+    path: '/',
+    iconCls: 'fa fa-life-ring', // 图标样式class
+    name: routeName.dataBi,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
+  /* 服务监控 */
+  {
+    path: '/',
+    iconCls: 'fa fa-paw', // 图标样式class
+    name: routeName.monitor,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
+  /* 变量管理 */
+  {
+    path: '/',
+    iconCls: 'fa fa-expeditedssl', // 图标样式class
+    name: routeName.variable,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
   /* 系统设置 */
   {
     path: '/',
