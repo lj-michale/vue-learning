@@ -14,6 +14,7 @@ const cn = {
     dataIntegration: '数据集成',
     dataDevelopment: '数据开发',
     dataScheduler: '数据调度',
+    dataBi: '数据BI',
     systemSettings: '系统设置',
     navMenu: '导航菜单'
   },

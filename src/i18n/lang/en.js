@@ -16,6 +16,7 @@ const en = {
     dataIntegration: 'dataIntegration',
     dataDevelopment: 'dataDevelopment',
     dataScheduler: 'dataScheduler',
+    dataBi: 'dataBi',
     systemSettings: 'systemSettings',
     navMenu: 'navMenu'
   },

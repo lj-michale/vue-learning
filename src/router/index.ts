@@ -63,6 +63,9 @@ const defaultRouter: Array<IRouter> = [
   }
 ]
 
+/**
+ * @descr 添加路由
+ * */
 const addRouter = [
   {
     path: '/',
@@ -78,8 +81,97 @@ const addRouter = [
       }
     ]
   },
+  /* 数据地图 */
+  {
+    path: '/',
+    iconCls: 'fa fa-exchange', // 图标样式class
+    name: routeName.dataMap,
+    component: Layout,
+    children: [
+      {
+        path: '/data/map',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
+  /* 数据血缘 */
+  {
+    path: '/',
+    iconCls: 'fa fa-universal-access', // 图标样式class
+    name: routeName.dataLineage,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
+  /* 数据集成 */
+  {
+    path: '/',
+    iconCls: 'fa fa-newspaper-o', // 图标样式class
+    name: routeName.dataIntegration,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
+  /* 数据开发 */
+  {
+    path: '/',
+    iconCls: 'fa fa-server', // 图标样式class
+    name: routeName.dataDevelopment,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
+  /* 数据调度 */
+  {
+    path: '/',
+    iconCls: 'fa fa-pencil-square-o', // 图标样式class
+    name: routeName.dataScheduler,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
 
-
+  /* 系统设置 */
+  {
+    path: '/',
+    iconCls: 'fa fa-cog', // 图标样式class
+    name: routeName.systemSettings,
+    component: Layout,
+    children: [
+      {
+        path: '/data/lineage',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.demoShuttle,
+        children: []
+      }
+    ]
+  },
 ]
 
 const router = createRouter({
