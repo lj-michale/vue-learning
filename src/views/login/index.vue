@@ -86,7 +86,7 @@ export default defineComponent({
       </div>
       <div class="loginBox">
         <div class="loginCon">
-          <p class="title">图灵计算后台管理系统</p>
+          <p class="title">Turing数据中台系统</p>
           <p class="title">前台: vue + element-ui</p>
           <el-card v-if="smdl" shadow="always" class="login-module">
             <template #header>
