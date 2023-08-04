@@ -14,7 +14,7 @@
         <li>
           <el-dropdown @command="handleCommand">
             <span class="el-dropdown-link">
-              酒一壶_茶一盏<i class="el-icon-arrow-down el-icon--right"></i>
+              lj.michale<i class="el-icon-arrow-down el-icon--right"></i>
             </span>
             <template #dropdown>
               <el-dropdown-menu>
