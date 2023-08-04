@@ -1,7 +1,7 @@
 /**
 
  * User: lj.michale
- * Date: 2018/12/8
+ * Date: 2023/08/8
  * Description: 文件描述
  */
 import zhLocale from 'element-plus/lib/locale/lang/zh-cn'
@@ -13,6 +13,7 @@ const cn = {
     dataLineage: '数据血缘',
     dataIntegration: '数据集成',
     dataDevelopment: '数据开发',
+    dataScheduler: '数据调度',
     systemSettings: '系统设置',
     navMenu: '导航菜单'
   },

@@ -1,7 +1,7 @@
 /**
 
  * User: lj.michale
- * Date: 2018/12/8
+ * Date: 2023/08/8
  * Description: 文件描述
  */
 
@@ -15,6 +15,7 @@ const en = {
     dataLineage: 'dataLineage',
     dataIntegration: 'dataIntegration',
     dataDevelopment: 'dataDevelopment',
+    dataScheduler: 'dataScheduler',
     systemSettings: 'systemSettings',
     navMenu: 'navMenu'
   },
