@@ -1,6 +1,6 @@
 <template>
   <div>
-
+     <p> 数据中台概览 </p>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <p> 数据资产 </p>
   </div>
 </template>
 

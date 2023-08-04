@@ -14,6 +14,8 @@ import Layout from '@/views/layout/layout.vue'
 import HomeMain from '@/views/index/mainIndex.vue'
 
 // 不是必须加载的组件使用懒加载
+const dataAsset = () => import('@/views/asset/index.vue')
+const dataMap = () => import('@/views/map/index.vue')
 const NotFound = () => import('@/views/page404.vue')
 
 const routeName = en.routeName
@@ -74,9 +76,10 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/icon',
+        path: '/data/asset',
         iconCls: 'fa fa-life-ring', // 图标样式class
-        name: routeName.builtInIcon,
+        name: routeName.dataAsset,
+        component: dataAsset,
         children: []
       }
     ]
@@ -91,7 +94,8 @@ const addRouter = [
       {
         path: '/data/map',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.dataMap,
+        component: dataMap,
         children: []
       }
     ]
@@ -119,7 +123,7 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/data/lineage',
+        path: '/data/integrate',
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.demoShuttle,
         children: []
@@ -134,7 +138,7 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/data/lineage',
+        path: '/data/develop',
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.demoShuttle,
         children: []
@@ -149,7 +153,7 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/data/lineage',
+        path: '/data/scheduler',
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.demoShuttle,
         children: []
@@ -164,7 +168,7 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/data/lineage',
+        path: '/data/bi',
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.demoShuttle,
         children: []
@@ -179,7 +183,7 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/data/lineage',
+        path: '/data/monitor',
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.demoShuttle,
         children: []
@@ -194,7 +198,7 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/data/lineage',
+        path: '/data/variable',
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.demoShuttle,
         children: []
@@ -209,7 +213,7 @@ const addRouter = [
     component: Layout,
     children: [
       {
-        path: '/data/lineage',
+        path: '/data/setting',
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.demoShuttle,
         children: []
