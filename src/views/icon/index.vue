@@ -1,54 +1,6 @@
 <template>
   <div>
-    <h3>框架内除了包含element ui自带的图标外还预装了Font Awesome图标库</h3>
 
-    <div style="clear: both"></div>
-    <p class="text"><span class="name">Font Awesome图标</span>本框架已经内置该图标库675个图标,不需要另外引入安装,可以直接使用,使用方法直接通过设置类名为 'fa fa-iconName' 来使用即可。例如：<span class="code">&lt;i class="fa fa-camera-retro"&gt;&lt;/i&gt;</span></p>
-    <p class="text">使用 fa-lg (33%递增)、fa-2x、 fa-3x、fa-4x，或者 fa-5x 类 来放大图标,例如：<span class="code">&lt;i class="fa fa-camera-retro fa-2x"&gt;&lt;/i&gt;</span></p>
-    <p class="text">使用 fa-spin 类来使任意图标旋转，还可以使用 fa-pulse 来使其进行8方位旋转,例如：<span class="code">&lt;i class="fa fa-camera-retro fa-2x"&gt;&lt;/i&gt;</span></p>
-    <div>
-      <ul class="ele-icoo">
-        <li>
-          <span>
-            <i class="fa fa-server"></i>
-            <span class="iconame">fa-server</span>
-          </span>
-        </li>
-        <li>
-          <span>
-            <i class="fa fa-tags"></i>
-            <span class="iconame">fa-tags</span>
-          </span>
-        </li>
-        <li>
-          <span>
-            <i class="fa fa-spinner fa-pulse"></i>
-            <span class="iconame">spinner</span>
-          </span>
-        </li><li>
-          <span>
-            <i class="fa fa-spinner fa-spin"></i>
-            <span class="iconame">fa-spinner</span>
-          </span>
-        </li>
-        <li>
-          <span>
-            <i class="fa fa-circle-o-notch fa-spin"></i>
-            <span class="iconame">fa-circle-o-notch</span>
-          </span>
-        </li><li>
-          <span>
-                <i class="fa fa-cog fa-spin"></i>
-            <span class="iconame">fa-cog</span>
-          </span>
-        </li>
-        <li>
-          <span>
-            <a target="_blank" href="http://fontawesome.dashgame.com/">更多Font Awesome图标</a>
-          </span>
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 

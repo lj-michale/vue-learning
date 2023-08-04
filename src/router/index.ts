@@ -58,7 +58,7 @@ const addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-paw', // 图标样式class
-    name: routeName.icon,
+    name: routeName.dataAsset,
     component: Layout,
     children: [
       {

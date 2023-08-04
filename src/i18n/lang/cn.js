@@ -8,7 +8,11 @@ import zhLocale from 'element-plus/lib/locale/lang/zh-cn'
 const cn = {
   routeName: {
     home: '中台概览',
-    icon: '图标',
+    dataAsset: '数据资产',
+    dataMap: '数据地图',
+    dataLineage: '数据血缘',
+    dataIntegration: '数据集成',
+    dataDevelopment: '数据开发',
     systemSettings: '系统设置',
     navMenu: '导航菜单'
   },

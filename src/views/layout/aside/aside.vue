@@ -3,7 +3,7 @@
     <el-aside id="asideNav">
       <div class="logo-name">
         <p v-if="layoutState.layoutData.logoShow">XU</p>
-        <p v-else>Turing数据中台系统</p>
+        <p v-else>数据中台系统</p>
       </div>
       <el-menu
           :default-active="$route.path" class="el-menu-vertical"
