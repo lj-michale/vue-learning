@@ -77,14 +77,14 @@ export default defineComponent({
 <template>
   <div id="login">
     <div class="loginConbox">
-      <div class="header">
+<!--      <div class="header">
         <div class="logo">
         <img src="../../assets/logo.png">
         </div>
-      </div>
+      </div>-->
       <div class="loginBox">
         <div class="loginCon">
-          <p class="title">数据中台系统</p>
+          <p class="title">图灵计算数据中台系统</p>
           <el-card v-if="smdl" shadow="always" class="login-module">
             <template #header>
               <div class="card-header clearfix formTitlt">

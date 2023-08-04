@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 左侧边导航栏 -->
     <el-aside id="asideNav">
       <div class="logo-name">
         <p v-if="layoutState.layoutData.logoShow">XU</p>
@@ -121,7 +122,8 @@ function selectMenu(key: string, indexpath?: string) {
         line-height: 50px;
         text-align: center;
         font-size: 16px;
-        color: #5e6d82;
+        font-weight: bold;
+        color: #ffffff;
       }
     }
     .el-menu-vertical:not(.el-menu--collapse) {
@@ -161,6 +163,5 @@ function selectMenu(key: string, indexpath?: string) {
         font-size: 18px;
       }
     }
-
   }
 </style>
