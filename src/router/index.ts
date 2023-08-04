@@ -14,6 +14,8 @@ import Layout from '@/views/layout/layout.vue'
 import HomeMain from '@/views/index/mainIndex.vue'
 
 // 不是必须加载的组件使用懒加载
+const NotFound = () => import('@/views/page404.vue')
+
 const routeName = en.routeName
 
 export type IRouter = {
@@ -52,6 +54,13 @@ const defaultRouter: Array<IRouter> = [
       }
     ]
   },
+  {
+    path: '/404',
+    component: NotFound,
+    name: '404',
+    hidden: true,
+    children: []
+  }
 ]
 
 const addRouter = [
