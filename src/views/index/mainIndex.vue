@@ -1,10 +1,16 @@
 <template>
   <div>
      <p> 数据中台概览 </p>
+    <el-row>
+      <el-col :span="24">
+        <line-echarts id="lineEcharts" height="300px"></line-echarts>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script setup lang="ts">
+import LineEcharts from '@/components/ECharts/lineEcharts.vue'
 
 </script>
 
