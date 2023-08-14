@@ -16,8 +16,16 @@ import HomeMain from '@/views/index/mainIndex.vue'
 // 不是必须加载的组件使用懒加载
 const dataAsset = () => import('@/views/asset/index.vue')
 const dataMap = () => import('@/views/map/index.vue')
+const dataLineage = () => import('@/views/lineage/index.vue')
+const dataIntegrate = () => import('@/views/integrate/index.vue')
+const dataDevelop = () => import('@/views/develop/index.vue')
+const dataAnalysis = () => import('@/views/analysis/index.vue')
+const dataScheduler = () => import('@/views/scheduler/index.vue')
+const dataBi = () => import('@/views/bi/index.vue')
+const monitor = () => import('@/views/monitor/index.vue')
+const variable = () => import('@/views/variable/index.vue')
 const NotFound = () => import('@/views/page404.vue')
-
+const NavClassify = () => import('@/views/syssetting/navClassify.vue')
 const routeName = en.routeName
 
 export type IRouter = {
@@ -110,7 +118,8 @@ const addRouter = [
       {
         path: '/data/lineage',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.dataLineage,
+        component: dataLineage,
         children: []
       }
     ]
@@ -125,7 +134,8 @@ const addRouter = [
       {
         path: '/data/integrate',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.dataIntegration,
+        component: dataIntegrate,
         children: []
       }
     ]
@@ -140,7 +150,24 @@ const addRouter = [
       {
         path: '/data/develop',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.dataDevelopment,
+        component: dataDevelop,
+        children: []
+      }
+    ]
+  },
+  /* 数据分析 */
+  {
+    path: '/',
+    iconCls: 'fa fa-server', // 图标样式class
+    name: routeName.dataAnalysis,
+    component: Layout,
+    children: [
+      {
+        path: '/data/analysis',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.dataAnalysis,
+        component: dataAnalysis,
         children: []
       }
     ]
@@ -155,7 +182,8 @@ const addRouter = [
       {
         path: '/data/scheduler',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.dataScheduler,
+        component: dataScheduler,
         children: []
       }
     ]
@@ -170,7 +198,8 @@ const addRouter = [
       {
         path: '/data/bi',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.dataBi,
+        component: dataBi,
         children: []
       }
     ]
@@ -185,7 +214,8 @@ const addRouter = [
       {
         path: '/data/monitor',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.monitor,
+        component: monitor,
         children: []
       }
     ]
@@ -200,7 +230,8 @@ const addRouter = [
       {
         path: '/data/variable',
         iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        name: routeName.variable,
+        component: variable,
         children: []
       }
     ]
@@ -211,15 +242,22 @@ const addRouter = [
     iconCls: 'fa fa-cog', // 图标样式class
     name: routeName.systemSettings,
     component: Layout,
+    meta: {role: ['superAdmin']},
     children: [
       {
-        path: '/data/setting',
-        iconCls: 'fa fa-sign-in', // 图标样式class
-        name: routeName.demoShuttle,
+        path: '/navClassifies',
+        iconCls: 'fa fa-th-list', // 图标样式class
+        name: routeName.navMenu,
+        component: NavClassify,
         children: []
       }
     ]
   },
+  { path: '/:catchAll(.*)',
+    redirect: '/404',
+    hidden: true,
+    children: []
+  }
 ]
 
 const router = createRouter({

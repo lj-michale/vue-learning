@@ -15,6 +15,7 @@ const en = {
     dataLineage: 'dataLineage',
     dataIntegration: 'dataIntegration',
     dataDevelopment: 'dataDevelopment',
+    dataAnalysis: 'dataAnalysis',
     dataScheduler: 'dataScheduler',
     dataBi: 'dataBi',
     monitor: 'monitor',
