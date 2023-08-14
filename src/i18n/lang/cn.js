@@ -14,6 +14,7 @@ const cn = {
     dataIntegration: '数据集成',
     dataDevelopment: '数据开发',
     dataAnalysis: '数据分析',
+    dataAlgorithm: '智能算法',
     dataScheduler: '数据调度',
     dataBi: '数据BI',
     monitor: '服务监控',

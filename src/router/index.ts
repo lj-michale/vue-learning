@@ -20,6 +20,7 @@ const dataLineage = () => import('@/views/lineage/index.vue')
 const dataIntegrate = () => import('@/views/integrate/index.vue')
 const dataDevelop = () => import('@/views/develop/index.vue')
 const dataAnalysis = () => import('@/views/analysis/index.vue')
+const dataAlgorithm = () => import('@/views/algorithm/index.vue')
 const dataScheduler = () => import('@/views/scheduler/index.vue')
 const dataBi = () => import('@/views/bi/index.vue')
 const monitor = () => import('@/views/monitor/index.vue')
@@ -168,6 +169,22 @@ const addRouter = [
         iconCls: 'fa fa-sign-in', // 图标样式class
         name: routeName.dataAnalysis,
         component: dataAnalysis,
+        children: []
+      }
+    ]
+  },
+  /* 智能算法 */
+  {
+    path: '/',
+    iconCls: 'fa fa-server', // 图标样式class
+    name: routeName.dataAlgorithm,
+    component: Layout,
+    children: [
+      {
+        path: '/data/algorithm',
+        iconCls: 'fa fa-sign-in', // 图标样式class
+        name: routeName.dataAlgorithm,
+        component: dataAlgorithm(),
         children: []
       }
     ]
