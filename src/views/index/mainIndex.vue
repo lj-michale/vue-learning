@@ -6,12 +6,17 @@
         <line-echarts id="lineEcharts" height="300px"></line-echarts>
       </el-col>
     </el-row>
+    <el-row>
+      <el-col :span="24">
+        <maintable id="maintable"></maintable>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script setup lang="ts">
 import LineEcharts from '@/components/ECharts/lineEcharts.vue'
-
+import Maintable from '@/components/table/maintable.vue'
 </script>
 
 <style lang="scss">
