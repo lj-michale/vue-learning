@@ -1,5 +1,11 @@
 <template>
   <div>
+    <span>每行24分栏布局</span>
+    <el-row>
+      <el-col :span="12" class="lightgreen-box">示例1</el-col>
+      <el-col :span="12" class="orange-box">示例1</el-col>
+    </el-row>
+    <el-divider></el-divider>
      <p> 数据中台概览 </p>
     <el-row>
       <el-col :span="24">
@@ -168,5 +174,13 @@ import Maintable from '@/components/table/maintable.vue'
     margin-#{$top}: 30px;
     padding-#{$top}: 10px;
     @extend %shadow;
+  }
+  .lightgreen-box {
+    background-color: lightgreen;
+    height: 24px;
+  }
+  .orange-box {
+    background-color: orange;
+    height: 24px;
   }
 </style>
