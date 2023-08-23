@@ -17,12 +17,18 @@
         <maintable id="maintable"></maintable>
       </el-col>
     </el-row>
+    <el-row>
+      <el-col :span="24">
+        <pieEcharts id="pieEcharts"></pieEcharts>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
 <script setup lang="ts">
 import LineEcharts from '@/components/ECharts/lineEcharts.vue'
 import Maintable from '@/components/table/maintable.vue'
+import pieEcharts from '@/components/ECharts/pieEcharts.vue'
 </script>
 
 <style lang="scss">

@@ -18,14 +18,14 @@ export default defineConfig({
   server: {
     open: true, // 设置服务启动时是否自动打开浏览器
     // 设置代理，根据我们项目实际情况配置
-    // proxy: {
-    //   '/api': {
-    //     target: 'http://xxx.xxx.xxx.xxx:8000',
-    //     changeOrigin: true,
-    //     secure: false,
-    //     rewrite: (path) => path.replace('/api/', '/')
-    //   }
-    // }
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8089',
+        changeOrigin: true,
+        secure: false,
+        // rewrite: (path) => path.replace('/api/', '/api')
+      }
+    }
   },
   build: {
 
