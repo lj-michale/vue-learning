@@ -13,10 +13,11 @@
 <!--  </table>-->
   <div id='app'>
 <!--     <el-tag type="info" v-for="item in products" :key="item.productId">{{ item.productName }} </el-tag>-->
-    <el-table :data="products.value" style="width: 100%">
-      <el-table-column prop="productId" label="商品编号" width="180" />
-      <el-table-column prop="productName" label="商品名称" width="120" />
-      <el-table-column prop="price" label="价格" width="120" />
+    <el-table :data="users" style="width: 100%">
+      <el-table-column prop="id" label="编号" width="120" />
+      <el-table-column prop="name" label="姓名" width="120" />
+      <el-table-column prop="age" label="年龄" width="120" />
+      <el-table-column prop="city" label="城市" />
     </el-table>
 
   </div>
