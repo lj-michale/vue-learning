@@ -1,18 +1,5 @@
 <template>
-<!--  <table cellspacing="0px" cellpadding="10px">-->
-<!--    <tr>-->
-<!--      <td>productId</td>-->
-<!--      <td>productName</td>-->
-<!--      <td>price</td>-->
-<!--    </tr>-->
-<!--    <tr v-for="product in products" :key="product.productId">-->
-<!--      <td>{{ product.productId }}</td>-->
-<!--      <td>{{ product.productName }}</td>-->
-<!--      <td>{{ product.price }}</td>-->
-<!--    </tr>-->
-<!--  </table>-->
   <div id='app'>
-<!--     <el-tag type="info" v-for="item in products" :key="item.productId">{{ item.productName }} </el-tag>-->
     <el-table :data="products.value" style="width: 100%">
       <el-table-column prop="productId" label="商品编号" width="180" />
       <el-table-column prop="productName" label="商品名称" width="120" />
@@ -25,25 +12,15 @@
 <script>
 import axios from 'axios'
 import { onMounted, reactive } from 'vue'
-import fetchTuring from '../../api/apis/turingApi.ts'
 
 export default {
   name: "pieEcharts",
   setup() {
-    let products = reactive([]);
-    // onMounted(() =>{
-    //   console.log(typeof fetchTuring)
-    //   fetchTuring.then(err=>{
-    //     console.log(err)
-    //   })
-    //
-    //
-    // })
-
+    let products = reactive([])
     onMounted(() =>{
       axios.post('/api/turing/products',{
             "productId": "235736HGGHGGG",
-            "productName": "胡萝卜",
+            "productName": "胡萝波卜",
             "price": "7.88"
       }).then(response => {
         products.value = response.data.result;
