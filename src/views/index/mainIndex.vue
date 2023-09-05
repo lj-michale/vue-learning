@@ -1,27 +1,6 @@
 <template>
   <div>
-    <span>每行24分栏布局</span>
-    <el-row>
-      <el-col :span="12" class="lightgreen-box">示例1</el-col>
-      <el-col :span="12" class="orange-box">示例1</el-col>
-    </el-row>
-    <el-divider></el-divider>
-     <p> 数据中台概览 </p>
-    <el-row>
-      <el-col :span="24">
-        <line-echarts id="lineEcharts" height="300px"></line-echarts>
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="24">
-        <maintable id="maintable"></maintable>
-      </el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="24">
-        <pieEcharts id="pieEcharts"></pieEcharts>
-      </el-col>
-    </el-row>
+
   </div>
 </template>
 
