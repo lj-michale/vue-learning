@@ -21,8 +21,9 @@ const en = {
     dataBi: 'dataBi',
     monitor: 'monitor',
     variable: 'variable',
-    systemSettings: 'systemSettings',
-    navMenu: 'navMenu'
+    systemManagement: 'systemManagement',
+    navMenu: 'navMenu',
+    updateTimeline: 'updateTimeline',
   },
   rightMenu: {
     close: 'close',

@@ -27,6 +27,7 @@ const monitor = () => import('@/views/monitor/index.vue')
 const variable = () => import('@/views/variable/index.vue')
 const NotFound = () => import('@/views/page404.vue')
 const NavClassify = () => import('@/views/syssetting/navClassify.vue')
+const UpdateTimeLine = () => import('@/components/UpdateTimeLine.vue')
 const routeName = en.routeName
 
 export type IRouter = {
@@ -257,15 +258,22 @@ const addRouter = [
   {
     path: '/',
     iconCls: 'fa fa-cog', // 图标样式class
-    name: routeName.systemSettings,
+    name: routeName.systemManagement,
     component: Layout,
     meta: {role: ['superAdmin']},
     children: [
       {
-        path: '/navClassifies',
+        path: '/navMenu',
         iconCls: 'fa fa-th-list', // 图标样式class
         name: routeName.navMenu,
         component: NavClassify,
+        children: []
+      },
+      {
+        path: '/updateTimeline',
+        iconCls: 'fa fa-th-list', // 图标样式class
+        name: routeName.updateTimeline,
+        component: UpdateTimeLine,
         children: []
       }
     ]

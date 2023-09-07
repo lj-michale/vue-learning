@@ -19,8 +19,9 @@ const cn = {
     dataBi: '数据BI',
     monitor: '服务监控',
     variable: '变量管理',
-    systemSettings: '系统设置',
-    navMenu: '导航菜单'
+    systemManagement: '系统管理',
+    navMenu: '导航菜单',
+    updateTimeline: '日志更新',
   },
   rightMenu: {
     close: '关闭',
