@@ -5,17 +5,19 @@
 -->
 <template>
   <div>
-    <el-card class="card" shadow="never">
-      <el-timeline>
+      <el-timeline :reverse="reverse">
         <el-timeline-item
             v-for="(item, index) in updateTimeLineInfos.value"
             :key="index"
+            color='#70B6FF'
+            type="primary"
             :timestamp="item.createTime"
             placement="top">
-          <div v-for="(item2,key) in item" :key="key">{{key}}:{{item2}}</div>
+          <el-card>
+             <div v-for="(list,key) in updateTimelineTitle" :key="key">{{list.name}}:{{item[list.code]}}</div>
+          </el-card>
         </el-timeline-item>
       </el-timeline>
-    </el-card>
   </div>
 </template>
 
@@ -27,6 +29,7 @@ export default {
   name: 'updateTimeline',
   setup() {
     let updateTimeLineInfos = reactive([])
+    const updateTimelineTitle = reactive([{code: 'author', name: '作者'},{code: 'action', name: '操作'},{code: 'context', name: '操作内容'},{code: 'createTime', name: '创建时间'}])
 
     onMounted(() => {
       axios.get('/api/turing/update/timeline').then(response => {
@@ -36,7 +39,7 @@ export default {
         console.log(error)
       })
     })
-    return {updateTimeLineInfos, onMounted}
+    return {updateTimeLineInfos, updateTimelineTitle, onMounted}
   }
 }
 </script>
