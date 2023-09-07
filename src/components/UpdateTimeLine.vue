@@ -5,19 +5,20 @@
 -->
 <template>
   <div>
-      <el-timeline :reverse="reverse">
-        <el-timeline-item
-            v-for="(item, index) in updateTimeLineInfos.value"
-            :key="index"
-            color='#70B6FF'
-            type="primary"
-            :timestamp="item.createTime"
-            placement="top">
-          <el-card>
-             <div v-for="(list,key) in updateTimelineTitle" :key="key">{{list.name}}:{{item[list.code]}}</div>
-          </el-card>
-        </el-timeline-item>
-      </el-timeline>
+    <el-timeline :reverse="reverse">
+      <el-timeline-item
+          v-for="(item, index) in updateTimeLineInfos.value"
+          :key="index"
+          size="large"
+          color='#70B6FF'
+          type="primary"
+          :timestamp="item.createTime"
+          placement="top">
+        <el-card>
+           <div v-for="(list,key) in updateTimelineTitle" :key="key">{{list.name}}:{{item[list.code]}}</div>
+        </el-card>
+      </el-timeline-item>
+    </el-timeline>
   </div>
 </template>
 
@@ -29,7 +30,12 @@ export default {
   name: 'updateTimeline',
   setup() {
     let updateTimeLineInfos = reactive([])
-    const updateTimelineTitle = reactive([{code: 'author', name: '作者'},{code: 'action', name: '操作'},{code: 'context', name: '操作内容'},{code: 'createTime', name: '创建时间'}])
+    const updateTimelineTitle = reactive([
+      {code: 'author', name: '作者'},
+      {code: 'action', name: '操作'},
+      {code: 'context', name: '操作内容'},
+      {code: 'createTime', name: '创建时间'}
+    ])
 
     onMounted(() => {
       axios.get('/api/turing/update/timeline').then(response => {
@@ -48,8 +54,12 @@ export default {
 h3 {
   margin: 10px 0px;
 }
-
 </style>
+
+
+
+
+
 
 
 
