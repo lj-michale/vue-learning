@@ -5,17 +5,13 @@
 -->
 <template>
   <div>
-    <el-card class="card" shadow="never">
+    <el-dialog title="历史信息" v-model:visible="centerDialogVisible" width="50%">
       <el-timeline>
-        <el-timeline-item
-            v-for="(item, index) in updateTimeLineInfos.value"
-            :key="index"
-            :timestamp="item.createTime"
-            placement="top">
-          <div v-for="(item2,key) in item" :key="key">{{key}}:{{item2}}</div>
+        <el-timeline-item placement="top" :timestamp="item.sj" v-for="(item, index) in updateTimeLineInfos" :key="index">
+
         </el-timeline-item>
       </el-timeline>
-    </el-card>
+    </el-dialog>
   </div>
 </template>
 
@@ -30,8 +26,7 @@ export default {
 
     onMounted(() => {
       axios.get('/api/turing/update/timeline').then(response => {
-        updateTimeLineInfos.value = response.data.result
-        console.log(updateTimeLineInfos.value)
+        updateTimeLineInfos.value = response.data.result;
       }).catch(error => {
         console.log(error)
       })
@@ -46,9 +41,3 @@ h3 {
   margin: 10px 0px;
 }
 </style>
-
-
-
-
-
-
