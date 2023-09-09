@@ -7,7 +7,7 @@
           <div class="item">
             <div class="main">
               <h2>数据服务统计</h2>
-              <h4>¥1.9K</h4>
+              <h4>98</h4>
               <p>
                 <span class="down"><i class="el-icon-bottom"></i>-18.9%</span>
                 比昨日
@@ -41,7 +41,7 @@
           <div class="item">
             <div class="main">
               <h2>计算作业统计</h2>
-              <h4>108</h4>
+              <h4>608</h4>
               <p>
                 <span class="up"><i class="el-icon-top"></i>+7.7%</span>
                 比昨日
@@ -55,7 +55,7 @@
           <div class="item">
             <div class="main">
               <h2>算法模型统计</h2>
-              <h4>108</h4>
+              <h4>208</h4>
               <p>
                 <span class="up"><i class="el-icon-top"></i>+7.7%</span>
                 比昨日
@@ -69,7 +69,7 @@
           <div class="item">
             <div class="main">
               <h2>服务调用统计</h2>
-              <h4>108</h4>
+              <h4>8908</h4>
               <p>
                 <span class="up"><i class="el-icon-top"></i>+7.7%</span>
                 比昨日
@@ -134,7 +134,7 @@
     </div>
   </div>
 
-  <div class="data-detail">
+  <div class="detail">
     <h3>实时追踪</h3>
     <el-tabs v-model="activeName">
       <el-tab-pane label="集群资源" name="tab-one" :key="'first'">
@@ -190,6 +190,31 @@ import Card from '@/components/card/Card.vue'
 
 <style lang="scss">
 
+.data-box{
+  width:100%;
+  height:250px;
+  background:white;
+}
+
+#detail{
+  width:100%;
+  height:300px;
+  background:white;
+}
+
+.use .server-use{
+  width:50%;
+  height:300px;
+  background:white;
+  float:left;
+}
+
+.use .server-op{
+  width:50%;
+  height:300px;
+  background:white;
+  float:left;
+}
 
 .data-box .item p span.up {
   color: #f56c6c;
@@ -198,4 +223,8 @@ import Card from '@/components/card/Card.vue'
 .data-box .item p span.down {
   color: #67c23a;
 }
+
+//div{
+//  border: 2px solid black;
+//}
 </style>
