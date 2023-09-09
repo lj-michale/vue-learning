@@ -17,11 +17,12 @@ export default {
   name: "pieEcharts",
   setup() {
     let products = reactive([])
+
     onMounted(() =>{
       axios.post('/api/turing/products',{
-            "productId": "235736HGGHGGG",
-            "productName": "胡萝波卜",
-            "price": "7.88"
+        "productId": "235736HGGHGGG",
+        "productName": "胡萝波卜",
+        "price": "7.88"
       }).then(response => {
         products.value = response.data.result;
         console.log(products)
