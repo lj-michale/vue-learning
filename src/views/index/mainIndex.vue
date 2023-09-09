@@ -139,7 +139,7 @@
     <el-tabs v-model="activeName">
       <el-tab-pane label="集群资源" name="tab-one" :key="'first'">
         <div style="background: white; display: inline">
-          ################ tab1内容 ################
+          <echart-example></echart-example>
         </div>
       </el-tab-pane>
       <el-tab-pane label="数据集成" name="tab-second" :key="'second'">
@@ -187,6 +187,7 @@ import Maintable from '@/components/table/maintable.vue'
 import pieEcharts from '@/components/ECharts/pieEcharts.vue'
 import Card from '@/components/card/Card.vue'
 import BarGraph from '@/components/ECharts/BarGraph'
+import EchartExample from '@/components/ECharts/EchartExample'
 </script>
 
 <style lang="scss">
