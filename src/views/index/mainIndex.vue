@@ -87,7 +87,7 @@
       <el-tabs v-model="activeName">
         <el-tab-pane label="用户分布" name="first" :key="'first'">
           <div style="background: white; display: inline">
-            ################ tab1内容 ################
+            <bar-graph :width="'600px'" :height="'250px'"></bar-graph>
           </div>
         </el-tab-pane>
         <el-tab-pane label="访问分析" name="second" :key="'second'">
@@ -109,7 +109,7 @@
     </div>
     <div class="server-op">
       <h4>运维追踪</h4>
-      <el-tabs v-model="activeName">
+      <el-tabs v-model="activeName2">
         <el-tab-pane label="集群运维" name="first" :key="'first'">
           <div style="background: white; display: inline">
             ################ tab1内容 ################
@@ -117,7 +117,7 @@
         </el-tab-pane>
         <el-tab-pane label="作业运维" name="second" :key="'second'">
           <div style="background: white; display: inline">
-            ################ tab2内容 ################
+
           </div>
         </el-tab-pane>
         <el-tab-pane label="监控告警" name="third" :key="'second'">
@@ -186,6 +186,7 @@ import LineEcharts from '@/components/ECharts/lineEcharts.vue'
 import Maintable from '@/components/table/maintable.vue'
 import pieEcharts from '@/components/ECharts/pieEcharts.vue'
 import Card from '@/components/card/Card.vue'
+import BarGraph from '@/components/ECharts/BarGraph'
 </script>
 
 <style lang="scss">
