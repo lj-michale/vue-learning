@@ -1,6 +1,6 @@
 <template>
   <div class="data-box">
-    <h4>数据概览</h4>
+    <h3>数据概览</h3>
     <el-row :gutter="20">
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="item-background">
@@ -80,6 +80,73 @@
       </el-col>
     </el-row>
   </div>
+
+  <div class="use">
+    <div class="server-use">
+      <h4>使用追踪</h4>
+      <el-tabs v-model="activeName">
+        <el-tab-pane label="用户分布" name="first" :key="'first'">
+          <div style="background: gray; display: inline">
+            ################ tab1内容 ################
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="访问分析" name="second" :key="'second'">
+          <div style="background: gray; display: inline">
+            ################ tab2内容 ################
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="模块统计" name="third" :key="'second'">
+          <div style="background: gray; display: inline">
+            ################ tab3内容 ################
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="使用时长" name="four" :key="'second'">
+          <div style="background: gray; display: inline">
+            ################ tab4内容 ################
+          </div>
+        </el-tab-pane>
+      </el-tabs>
+    </div>
+    <div class="server-op">
+      <h4>运维追踪</h4>
+      <el-tabs v-model="activeName">
+        <el-tab-pane label="集群运维" name="first" :key="'first'">
+          <div style="background: gray; display: inline">
+            ################ tab1内容 ################
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="作业运维" name="second" :key="'second'">
+          <div style="background: gray; display: inline">
+            ################ tab2内容 ################
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="监控告警" name="third" :key="'second'">
+          <div style="background: gray; display: inline">
+            ################ tab3内容 ################
+          </div>
+        </el-tab-pane>
+        <el-tab-pane label="紧急事件" name="four" :key="'second'">
+          <div style="background: gray; display: inline">
+            ################ tab4内容 ################
+          </div>
+        </el-tab-pane>
+      </el-tabs>
+    </div>
+  </div>
+
+  <div class="data-detail">
+    <h3>实时追踪</h3>
+    <el-menu :default-active="activeIndex" class="el-menu" mode="horizontal" @select="handleSelect">
+      <el-menu-item index="1">集群资源</el-menu-item>
+      <el-menu-item index="2">数据集成</el-menu-item>
+      <el-menu-item index="2">作业计算</el-menu-item>
+      <el-menu-item index="3">作业调度</el-menu-item>
+      <el-menu-item index="3">即席查询</el-menu-item>
+      <el-menu-item index="3">数据湖仓</el-menu-item>
+      <el-menu-item index="3">数据调用</el-menu-item>
+      <el-menu-item index="3">监控运维</el-menu-item>
+    </el-menu>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -90,6 +157,7 @@ import Card from '@/components/card/Card.vue'
 </script>
 
 <style lang="scss">
+
 
 .data-box .item p span.up {
   color: #f56c6c;
