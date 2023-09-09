@@ -192,7 +192,7 @@ import Card from '@/components/card/Card.vue'
 
 .data-box{
   width:100%;
-  height:250px;
+  height:140px;
   background:white;
 }
 
