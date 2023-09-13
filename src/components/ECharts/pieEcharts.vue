@@ -12,7 +12,6 @@
 import axios from 'axios'
 import { onMounted, reactive } from 'vue'
 
-
 export default {
   name: "pieEcharts",
   setup() {
