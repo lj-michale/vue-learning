@@ -1,25 +1,59 @@
 <template>
   <div class="summary-card">
-    <el-row :gutter="20" type='flex'>
+   <!--  gutter栅格间隔  -->
+    <el-row :gutter="5" type='flex'>
       <el-col :md="4" :xs="15">
-        <el-card shadow="never" class="item-background">
-
+        <el-card shadow="never" class="box-card">
+          <h3>新增用户数</h3>
+          <div>
+            <i class="el-icon-user-solid" style="color: green"></i>
+            <span>763</span>
+          </div>
         </el-card>
       </el-col>
       <el-col :md="4" :xs="15">
-        <el-card shadow="never" class="item-background">
+        <el-card shadow="never" class="box-card">
+          <h3>活跃用户数</h3>
+          <div>
+            <i class="el-icon-s-flag" style="color: red"></i>
+            <span>434</span>
+          </div>
         </el-card>
       </el-col>
       <el-col :md="4" :xs="15">
-        <el-card shadow="never" class="item-background">
+        <el-card shadow="never" class="box-card">
+          <h3>注册用户数</h3>
+          <div>
+            <i class="el-icon-s-flag" style="color: red"></i>
+            <span>974</span>
+          </div>
         </el-card>
       </el-col>
       <el-col :md="4" :xs="15">
-        <el-card shadow="never" class="item-background">
+        <el-card shadow="never" class="box-card">
+          <h3>私聊用户数</h3>
+          <div>
+            <i class="el-icon-s-flag" style="color: red"></i>
+            <span>234</span>
+          </div>
         </el-card>
       </el-col>
       <el-col :md="4" :xs="15">
-        <el-card shadow="never" class="item-background">
+        <el-card shadow="never" class="box-card">
+          <h3>付费用户数</h3>
+          <div>
+            <i class="el-icon-s-flag" style="color: red"></i>
+            <span>2446</span>
+          </div>
+        </el-card>
+      </el-col>
+      <el-col :md="4" :xs="15">
+        <el-card shadow="never" class="box-card">
+          <h3>付费金额</h3>
+          <div>
+            <i class="el-icon-s-flag" style="color: red"></i>
+            <span>48262</span>
+          </div>
         </el-card>
       </el-col>
     </el-row>
@@ -36,8 +70,9 @@ export default {
     let summaryCards = reactive([])
 
     onMounted(() => {
-      axios.post('/api/turing/summary/cards').then(response => {
+      axios.get('/api/turing/summary/cards').then(response => {
         summaryCards.value = response.data.result
+        console.log(summaryCards.value)
       }).catch(error => {
         console.log(error)
       })
@@ -49,5 +84,10 @@ export default {
 </script>
 
 <style scoped>
-
+.summary-card .box-card{
+  height:150px;
+}
+.el-card{
+  text-align: center;
+}
 </style>

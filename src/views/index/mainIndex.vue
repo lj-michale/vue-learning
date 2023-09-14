@@ -4,7 +4,7 @@
       <h3>数据概览</h3>
     </div>
     <div class="card">
-
+      <summary-card></summary-card>
     </div>
   </div>
 
@@ -16,7 +16,7 @@
     </div>
     <div class="yunwei">
       <div class="title">
-        <h3>运维监控</h3>
+        <h3>运维追踪</h3>
       </div>
     </div>
   </div>
@@ -32,7 +32,7 @@
 // import LineEcharts from '@/components/ECharts/lineEcharts'
 // import Maintable from '@/components/table/maintable'
 // import pieEcharts from '@/components/ECharts/pieEcharts'
-// import SummaryCard from '@/components/card/SummaryCard'
+import SummaryCard from '@/components/card/SummaryCard'
 // import BarGraph from '@/components/ECharts/BarGraph'
 // import EchartExample from '@/components/ECharts/EchartExample'
 // import Curve from '@/components/ECharts/Curve'
@@ -43,7 +43,7 @@
 .data-summary{
   width:auto;
   height:25%;
-  background:white;
+  background:transparent;
   margin:2px;
   padding:2px;
   border: 1px solid black;
@@ -51,10 +51,9 @@
 .data-summary .card{
   width:auto;
   height:150px;
-  background-color:green;
+  background-color:transparent;
   margin: 2px;
   padding:2px;
-  border: 1px solid black;
 }
 .data-use{
   width:auto;
@@ -67,7 +66,7 @@
 .data-use .shiyong{
   width:49%;
   height:245px;
-  background-color:#99a9bf;
+  background-color:transparent;
   margin: 2px;
   float: left;
   padding:2px;
@@ -76,7 +75,7 @@
 .data-use .yunwei{
   width:49%;
   height:245px;
-  background-color:#99a9bf;
+  background-color:transparent;
   margin: 2px;
   float: right;
   padding:2px;
@@ -92,14 +91,19 @@
 }
 .data-summary .title{
   width:75px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 .data-use .title{
   width:75px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
-.data-detail .title{
-  width:75px;
-  border: 1px solid black;
+.data-detail .title {
+  width: 75px;
+  //border: 1px solid black;
+}
+
+.summary-card{
+  width: 100%;
+  height: 100%;
 }
 </style>
