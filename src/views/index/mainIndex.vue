@@ -46,7 +46,7 @@ import SummaryCard from '@/components/card/SummaryCard'
   background:transparent;
   margin:2px;
   padding:2px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 .data-summary .card{
   width:auto;
@@ -59,18 +59,18 @@ import SummaryCard from '@/components/card/SummaryCard'
   width:auto;
   height:35%;
   background:white;
-  margin:2px;
+  margin:0px;
   padding:2px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 .data-use .shiyong{
   width:49%;
   height:245px;
   background-color:transparent;
-  margin: 2px;
+  margin:2px;
   float: left;
   padding:2px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 .data-use .yunwei{
   width:49%;
@@ -79,7 +79,7 @@ import SummaryCard from '@/components/card/SummaryCard'
   margin: 2px;
   float: right;
   padding:2px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 .data-detail{
   width:auto;
@@ -87,7 +87,7 @@ import SummaryCard from '@/components/card/SummaryCard'
   background:white;
   margin:2px;
   padding:2px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 .data-summary .title{
   width:75px;

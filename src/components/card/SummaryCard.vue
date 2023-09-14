@@ -1,10 +1,15 @@
+<!--
+ * @Description: 数据概览-数据卡片
+ * @Author: l.michale
+ * @Date: 2023-09-14 17:13:09
+-->
 <template>
   <div class="summary-card">
    <!--  gutter栅格间隔  -->
     <el-row :gutter="5" type='flex'>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3 class="card-name">新增用户数</h3>
+          <h3 class="card-name">组件服务</h3>
           <div>
             <span>763</span>
           </div>
@@ -12,7 +17,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3 class="card-name">活跃用户数</h3>
+          <h3 class="card-name">数据资产</h3>
           <div>
             <span>434</span>
           </div>
@@ -20,7 +25,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3 class="card-name">注册用户数</h3>
+          <h3 class="card-name">计算作业</h3>
           <div>
             <span>974</span>
           </div>
@@ -28,7 +33,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3 class="card-name">私聊用户数</h3>
+          <h3 class="card-name">算法模型</h3>
           <div>
             <span>234</span>
           </div>
@@ -36,7 +41,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3 class="card-name">付费用户数</h3>
+          <h3 class="card-name">服务调用</h3>
           <div>
             <span>2446</span>
           </div>
@@ -44,9 +49,9 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3 class="card-name">付费金额</h3>
+          <h3 class="card-name">平台告警</h3>
           <div>
-            <span>48262</span>
+            <span>62</span>
           </div>
         </el-card>
       </el-col>
