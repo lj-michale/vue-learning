@@ -62,27 +62,27 @@ import DataTrack from "@/views/index/dataTrack.vue";
 .data-use{
   width:auto;
   height:35%;
-  background:white;
+  background:transparent;
   margin:0px;
-  padding:2px;
+  padding:0px;
   //border: 1px solid black;
 }
 .data-use .shiyong{
   width:49%;
   height:245px;
-  background-color:transparent;
-  margin:2px;
-  float: left;
-  padding:2px;
+  background-color:white;
+  margin:1px;
+  float:left;
+  padding:0px;
   //border: 1px solid black;
 }
 .data-use .yunwei{
   width:49%;
   height:245px;
-  background-color:transparent;
-  margin: 2px;
-  float: right;
-  padding:2px;
+  background-color:white;
+  margin:1px;
+  float:right;
+  padding:0px;
   //border: 1px solid black;
 }
 .data-detail{
