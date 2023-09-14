@@ -10,13 +10,15 @@
 
   <div class="data-use">
     <div class="shiyong">
+      <h3 class="title-1">数据追踪</h3>
       <div class="title">
-        <h3 class="title-1">数据追踪</h3>
+        <data-track></data-track>
       </div>
     </div>
     <div class="yunwei">
+      <h3 class="title-1">运维追踪</h3>
       <div class="title">
-        <h3 class="title-1">运维追踪</h3>
+
       </div>
     </div>
   </div>
@@ -33,6 +35,8 @@
 // import Maintable from '@/components/table/maintable'
 // import pieEcharts from '@/components/ECharts/pieEcharts'
 import SummaryCard from '@/components/card/SummaryCard'
+import dataTrack from '@/views/index/dataTrack'
+import DataTrack from "@/views/index/dataTrack.vue";
 // import BarGraph from '@/components/ECharts/BarGraph'
 // import EchartExample from '@/components/ECharts/EchartExample'
 // import Curve from '@/components/ECharts/Curve'
@@ -44,16 +48,16 @@ import SummaryCard from '@/components/card/SummaryCard'
   width:auto;
   height:25%;
   background:transparent;
-  margin:2px;
-  padding:2px;
+  margin:0px;
+  padding:0px;
   //border: 1px solid black;
 }
 .data-summary .card{
   width:auto;
   height:150px;
   background-color:transparent;
-  margin: 2px;
-  padding:2px;
+  margin:0px;
+  padding:0px;
 }
 .data-use{
   width:auto;

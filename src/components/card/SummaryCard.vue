@@ -85,6 +85,7 @@ export default {
 <style scoped>
 .summary-card .box-card{
   height:150px;
+
 }
 .summary-card .box-card:hover{
   height:150px;
