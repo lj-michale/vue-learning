@@ -1,7 +1,7 @@
 <template>
   <div class="data-summary">
     <div class="title">
-      <h3>数据概览</h3>
+      <h3 class="title-1">数据概览</h3>
     </div>
     <div class="card">
       <summary-card></summary-card>
@@ -11,19 +11,19 @@
   <div class="data-use">
     <div class="shiyong">
       <div class="title">
-        <h3>数据追踪</h3>
+        <h3 class="title-1">数据追踪</h3>
       </div>
     </div>
     <div class="yunwei">
       <div class="title">
-        <h3>运维追踪</h3>
+        <h3 class="title-1">运维追踪</h3>
       </div>
     </div>
   </div>
 
   <div class="data-detail">
     <div class="title">
-      <h3>实时数据</h3>
+      <h3 class="title-1">实时数据</h3>
     </div>
   </div>
 </template>
@@ -92,6 +92,9 @@ import SummaryCard from '@/components/card/SummaryCard'
 .data-summary .title{
   width:75px;
   //border: 1px solid black;
+}
+.title-1{
+  font-size: 14px;
 }
 .data-use .title{
   width:75px;

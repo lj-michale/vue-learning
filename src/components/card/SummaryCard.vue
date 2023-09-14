@@ -6,7 +6,6 @@
         <el-card shadow="never" class="box-card">
           <h3>新增用户数</h3>
           <div>
-            <i class="el-icon-user-solid" style="color: green"></i>
             <span>763</span>
           </div>
         </el-card>
@@ -15,7 +14,6 @@
         <el-card shadow="never" class="box-card">
           <h3>活跃用户数</h3>
           <div>
-            <i class="el-icon-s-flag" style="color: red"></i>
             <span>434</span>
           </div>
         </el-card>
@@ -24,7 +22,6 @@
         <el-card shadow="never" class="box-card">
           <h3>注册用户数</h3>
           <div>
-            <i class="el-icon-s-flag" style="color: red"></i>
             <span>974</span>
           </div>
         </el-card>
@@ -33,7 +30,6 @@
         <el-card shadow="never" class="box-card">
           <h3>私聊用户数</h3>
           <div>
-            <i class="el-icon-s-flag" style="color: red"></i>
             <span>234</span>
           </div>
         </el-card>
@@ -42,7 +38,6 @@
         <el-card shadow="never" class="box-card">
           <h3>付费用户数</h3>
           <div>
-            <i class="el-icon-s-flag" style="color: red"></i>
             <span>2446</span>
           </div>
         </el-card>
@@ -51,7 +46,6 @@
         <el-card shadow="never" class="box-card">
           <h3>付费金额</h3>
           <div>
-            <i class="el-icon-s-flag" style="color: red"></i>
             <span>48262</span>
           </div>
         </el-card>
