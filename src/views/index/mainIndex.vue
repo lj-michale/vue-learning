@@ -91,10 +91,13 @@ import SummaryCard from '@/components/card/SummaryCard'
 }
 .data-summary .title{
   width:75px;
+  margin: 0;
+  font-style: normal;
+  text-overflow: ellipsis;
   //border: 1px solid black;
 }
 .title-1{
-  font-size: 14px;
+  font-size: 15px;
 }
 .data-use .title{
   width:75px;

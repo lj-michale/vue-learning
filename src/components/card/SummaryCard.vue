@@ -4,7 +4,7 @@
     <el-row :gutter="5" type='flex'>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3>新增用户数</h3>
+          <h3 class="card-name">新增用户数</h3>
           <div>
             <span>763</span>
           </div>
@@ -12,7 +12,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3>活跃用户数</h3>
+          <h3 class="card-name">活跃用户数</h3>
           <div>
             <span>434</span>
           </div>
@@ -20,7 +20,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3>注册用户数</h3>
+          <h3 class="card-name">注册用户数</h3>
           <div>
             <span>974</span>
           </div>
@@ -28,7 +28,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3>私聊用户数</h3>
+          <h3 class="card-name">私聊用户数</h3>
           <div>
             <span>234</span>
           </div>
@@ -36,7 +36,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3>付费用户数</h3>
+          <h3 class="card-name">付费用户数</h3>
           <div>
             <span>2446</span>
           </div>
@@ -44,7 +44,7 @@
       </el-col>
       <el-col :md="4" :xs="15">
         <el-card shadow="never" class="box-card">
-          <h3>付费金额</h3>
+          <h3 class="card-name">付费金额</h3>
           <div>
             <span>48262</span>
           </div>
@@ -81,7 +81,13 @@ export default {
 .summary-card .box-card{
   height:150px;
 }
-.el-card{
-  text-align: center;
+.summary-card .box-card:hover{
+  height:150px;
+  transform: scale(1.4);
+}
+.card-name{
+  font-size: 15px;
+  color: #000000;
+  font-style: normal;
 }
 </style>
