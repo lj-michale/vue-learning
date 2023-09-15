@@ -18,7 +18,7 @@
     <div class="yunwei">
       <h3 class="title-1">运维追踪</h3>
       <div class="title">
-
+        <opera-track> 运维追踪 </opera-track>
       </div>
     </div>
   </div>
@@ -36,7 +36,8 @@
 // import pieEcharts from '@/components/ECharts/pieEcharts'
 import SummaryCard from '@/components/card/SummaryCard'
 import dataTrack from '@/views/index/dataTrack'
-import DataTrack from "@/views/index/dataTrack.vue";
+import operaTrack from  "@/views/index/operaTrack"
+import OperaTrack from "@/views/index/operaTrack.vue";
 // import BarGraph from '@/components/ECharts/BarGraph'
 // import EchartExample from '@/components/ECharts/EchartExample'
 // import Curve from '@/components/ECharts/Curve'
@@ -68,7 +69,7 @@ import DataTrack from "@/views/index/dataTrack.vue";
   //border: 1px solid black;
 }
 .data-use .shiyong{
-  width:49%;
+  width:820px;
   height:245px;
   background-color:white;
   margin:1px;
@@ -77,7 +78,7 @@ import DataTrack from "@/views/index/dataTrack.vue";
   //border: 1px solid black;
 }
 .data-use .yunwei{
-  width:49%;
+  width:820px;
   height:245px;
   background-color:white;
   margin:1px;
