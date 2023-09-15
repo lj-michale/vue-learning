@@ -4,11 +4,12 @@
     <h1>{{ msg }}</h1>
     <h3>tips: see browser controller</h3>
     <button type="button" @click.self="loveTalk()" >get loveTalk</button>
+    <button type="button" @click.self="getProducts()" >获取商品信息</button>
   </div>
 </template>
 
 <script lang="ts">
-import {getUpdateTimeLine} from "@/api/apis/exampleApi"
+import {getUpdateTimeLine, getProductList} from "@/api/apis/exampleApi"
 
 async function fetchGetLoveTalk() {
   const res = await getUpdateTimeLine()
@@ -27,8 +28,13 @@ export default {
     function loveTalk() {
       console.log('get loveTalk',fetchGetLoveTalk())
     }
+
+    function getProducts() {
+      console.log('post qqState',getProductList({ productId: '1655466387', productName: '肯德基'}))
+    }
+
     return {
-      name,loveTalk
+      name,loveTalk,getProducts
     }
   }
 }

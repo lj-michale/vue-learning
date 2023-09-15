@@ -13,3 +13,10 @@ export function getUpdateTimeLine() {
   })
 }
 
+export function getProductList(data:any) {
+  return axios({
+    url: `/api/turing/products`,
+    method: 'post',
+    data
+  })
+}
