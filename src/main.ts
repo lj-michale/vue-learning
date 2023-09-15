@@ -5,6 +5,7 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import '@/assets/iconfont/iconfont.css'
 import 'font-awesome/css/font-awesome.css'
+import 'lib-flexible-computer'
 // @ts-ignore
 import i18n from './i18n/i18n'
 import { createPinia } from 'pinia'

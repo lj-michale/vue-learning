@@ -69,7 +69,7 @@ import OperaTrack from "@/views/index/operaTrack.vue";
   //border: 1px solid black;
 }
 .data-use .shiyong{
-  width:820px;
+  width:790px;
   height:245px;
   background-color:white;
   margin:1px;
@@ -78,7 +78,7 @@ import OperaTrack from "@/views/index/operaTrack.vue";
   //border: 1px solid black;
 }
 .data-use .yunwei{
-  width:820px;
+  width:790px;
   height:245px;
   background-color:white;
   margin:1px;
@@ -112,7 +112,6 @@ import OperaTrack from "@/views/index/operaTrack.vue";
   width: 75px;
   //border: 1px solid black;
 }
-
 .summary-card{
   width: 100%;
   height: 100%;
