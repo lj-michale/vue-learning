@@ -23,6 +23,7 @@ async function fetchGetLoveTalk() {
 export default {
   name: "index",
   props: { msg: String },
+
   setup() {
     // 调用
     function loveTalk() {
@@ -30,7 +31,7 @@ export default {
     }
 
     function getProducts() {
-      console.log('post qqState',getProductList({ productId: '1655466387', productName: '肯德基'}))
+      console.log('post getProductList',getProductList({ productId: '1655466387', productName: '肯德基'}))
     }
 
     return {
@@ -44,7 +45,20 @@ export default {
 </script>
 
 <style scoped>
-button {
-  margin: 0 10px;
+table {
+  width: 800px;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+th {
+  background: #ccc;
+}
+th:nth-of-type(1) {
+  text-align: left;
+}
+th,
+td {
+  padding: 10px;
+  border: 1px solid #000;
 }
 </style>

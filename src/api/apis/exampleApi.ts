@@ -20,3 +20,18 @@ export function getProductList(data:any) {
     data
   })
 }
+
+export function getSummaryCards(data:any) {
+  return axios({
+    url: `/api/turing/summary/getSummaryCards`,
+    method: 'get',
+    data
+  })
+}
+
+export function getLastSymmaryCards() {
+  return axios({
+    url: `/api/turing/last/summary/getLastSymmaryCards`,
+    method: 'get',
+  })
+}
