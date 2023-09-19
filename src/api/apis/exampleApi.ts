@@ -1,5 +1,4 @@
 /**
-
  * User: lj.michale
  * Date: 2022/9/27
  * Description: 文件描述
@@ -29,9 +28,9 @@ export function getSummaryCards(data:any) {
   })
 }
 
-export function getLastSymmaryCards() {
+export function getLastSummaryCards() {
   return axios({
-    url: `/api/turing/last/summary/getLastSymmaryCards`,
+    url: `/api/turing/last/summary/getLastSummaryCards`,
     method: 'get',
   })
 }

@@ -16,7 +16,7 @@
         <el-card shadow="never" class="box-card">
           <h3 class="card-name"></h3>
           <div>
-            <span>434</span>
+            <span>474</span>
           </div>
         </el-card>
       </el-col>
@@ -65,14 +65,12 @@
 </template>
 
 <script>
-// import axios from 'axios'
 import { onMounted, reactive } from 'vue'
 import {getSummaryCards} from "@/api/apis/exampleApi"
-import {getLastSymmaryCards} from "@/api/apis/exampleApi"
+import {getLastSummaryCards} from "@/api/apis/exampleApi"
 
 export default {
   name: "SummaryCard",
-
   // setup() 函数是 vue3 中，专门为组件提供的新属性。它为我们使用 vue3 的 Composition API 新特性提供了统一的入口。
   setup() {
     let summaryCards = reactive([])
@@ -80,16 +78,15 @@ export default {
 
     onMounted(() => {
       // axios.get('/api/turing/summary/cards').then(response => {
-      //   summaryCards.value = response.data.result
-      //   console.log(summaryCards.value)
+      // summaryCards.value = response.data.result
+      // console.log(summaryCards.value)
       getSummaryCards().then(response => {
         summaryCards.value = response.data.result
-        console.log(summaryCards.value)
       }).catch(error => {
         console.log(error)
       })
 
-      getLastSymmaryCards().then(response => {
+      getLastSummaryCards().then(response => {
         lastSummaryCards.value = response.data.result
       }).catch(error => {
         console.log(error)
