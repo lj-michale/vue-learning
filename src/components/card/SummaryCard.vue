@@ -5,11 +5,6 @@
 -->
 <template>
   <div class="summary-card">
-    <el-table :data="lastSummaryCards.value" style="width: 100%">
-      <el-table-column prop="indexName" label="指标编码" width="180" />
-      <el-table-column prop="name" label="指标名称" width="120" />
-      <el-table-column prop="value" label="数值" width="120" />
-    </el-table>
    <!--  gutter栅格间隔  -->
     <el-row :gutter="5" type='flex' style="width: 100%">
       <el-col :md="4" :xs="15">
@@ -77,9 +72,6 @@ export default {
     let lastSummaryCards = reactive({})
 
     onMounted(() => {
-      // axios.get('/api/turing/summary/cards').then(response => {
-      // summaryCards.value = response.data.result
-      // console.log(summaryCards.value)
       getSummaryCards().then(response => {
         summaryCards.value = response.data.result
       }).catch(error => {
