@@ -66,7 +66,7 @@ import {getLastSummaryCards} from "@/api/apis/exampleApi"
 
 export default {
   name: "SummaryCard",
-  // setup() 函数是 vue3 中，专门为组件提供的新属性。它为我们使用 vue3 的 Composition API 新特性提供了统一的入口。
+  // setup钩子函数是 vue3 中，专门为组件提供的新属性。它为我们使用 vue3 的 Composition API 新特性提供了统一的入口。
   setup() {
     let summaryCards = reactive([])
     let lastSummaryCards = reactive({})

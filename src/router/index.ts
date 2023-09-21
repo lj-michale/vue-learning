@@ -8,7 +8,7 @@ import {RouteRecordRaw, createRouter, createWebHashHistory} from 'vue-router'
 
 import en from '../i18n/lang/en.js'
 
-import CommonViews from '@/views/CommonViews.vue'
+// import CommonViews from '@/views/CommonViews.vue'
 import Login from '@/views/login/index.vue'
 import Layout from '@/views/layout/layout.vue'
 import HomeMain from '@/views/index/mainIndex.vue'
@@ -38,6 +38,7 @@ export type IRouter = {
   children: Array<IRouter>
 } & RouteRecordRaw
 
+// @ts-ignore
 const defaultRouter: Array<IRouter> = [
   { path: '/',
     redirect: '/index',
