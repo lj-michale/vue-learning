@@ -21,6 +21,7 @@ const cn = {
     systemManagement: '系统管理',
     navMenu: '导航菜单',
     updateTimeline: '日志更新',
+    useFeedback: '用户反馈',
   },
   rightMenu: {
     close: '关闭',

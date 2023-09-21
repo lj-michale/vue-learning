@@ -24,6 +24,7 @@ const en = {
     systemManagement: 'systemManagement',
     navMenu: 'navMenu',
     updateTimeline: 'updateTimeline',
+    useFeedback: 'useFeedback',
   },
   rightMenu: {
     close: 'close',
