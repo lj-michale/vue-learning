@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Article :msg="name"></Article>
+    <Article :msg="name" @change="changeName"></Article>
   </div>
 </template>
 
@@ -15,10 +15,15 @@ export default {
   },
 
   setup() {
+    function changeName() {
+      alert('父组件事件被调用')
+    }
     return {
-      name: '渐行渐远渐无书，水阔鱼沉何处问'
+      name: '渐行渐远渐无书，水阔鱼沉何处问',
+      changeName
     }
   }
+
 }
 </script>
 
