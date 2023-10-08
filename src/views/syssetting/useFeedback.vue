@@ -6,6 +6,7 @@
 
 <script>
 import Article from '@/components/Article'
+import {ref} from 'vue'
 
 export default {
   name: "useFeedback",
@@ -15,11 +16,13 @@ export default {
   },
 
   setup() {
-    function changeName() {
-      alert('父组件事件被调用')
+    let name = ref('渐行渐远渐无书，水阔鱼沉何处问')
+
+    function changeName(msg) {
+      name.value = msg
     }
     return {
-      name: '渐行渐远渐无书，水阔鱼沉何处问',
+      name,
       changeName
     }
   }

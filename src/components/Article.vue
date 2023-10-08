@@ -14,10 +14,11 @@ export default {
   setup(props, content) {
     console.log(props.msg)
 
-    function sendToParent() {
-      content.emit('change')
-    }
+    let newName = '群芳过后西湖好，狼籍残红。飞絮濛濛。垂柳阑干尽日风'
 
+    function sendToParent() {
+      content.emit('change', newName)
+    }
     return {
       sendToParent
     }
