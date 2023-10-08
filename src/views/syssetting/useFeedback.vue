@@ -4,15 +4,15 @@
 </template>
 
 <script>
-
+import { ref } from 'vue'
 
 export default {
   name: "useFeedback",
   setup() {
-    let name = "泪眼问花花不语，乱红飞过秋千去"
+    let name = ref("泪眼问花花不语，乱红飞过秋千去")
 
     function change() {
-      name = "人生自是有情痴，此恨不关风与月"
+      name.value = "人生自是有情痴，此恨不关风与月"
     }
 
     return {
