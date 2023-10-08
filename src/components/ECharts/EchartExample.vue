@@ -85,6 +85,7 @@ export default {
           }
         ]
       }
+
       myChart.setOption(options)
     }
   }

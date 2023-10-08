@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import {reactive, ref, defineComponent, h, onMounted} from 'vue'
 import {ElMessage, ElNotification} from 'element-plus/es'
 import {store} from '@/store'
@@ -77,11 +77,8 @@ export default defineComponent({
 <template>
   <div id="login">
     <div class="loginConbox">
-<!--      <div class="header">
-        <div class="logo">
-        <img src="../../assets/logo.png">
-        </div>
-      </div>-->
+      <div class="header">
+      </div>
       <div class="loginBox">
         <div class="loginCon">
           <p class="title">图灵计算数据中台系统</p>
@@ -100,8 +97,7 @@ export default defineComponent({
                 <el-input v-model="loginForm.username" type="text" size="large" auto-complete="off" placeholder="请输入登录账号"></el-input>
               </el-form-item>
               <el-form-item>
-                <el-input
-v-model="loginForm.password" type="password" size="large" auto-complete="off"
+                <el-input v-model="loginForm.password" type="password" size="large" auto-complete="off"
                           placeholder="请输入登录密码"></el-input>
               </el-form-item>
               <el-form-item>

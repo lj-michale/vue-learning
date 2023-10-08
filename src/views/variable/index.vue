@@ -8,8 +8,9 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import {getUpdateTimeLine, getProductList} from "@/api/apis/exampleApi"
+import PieEcharts from "@/components/ECharts/pieEcharts"
 
 async function fetchGetLoveTalk() {
   const res = await getUpdateTimeLine()
@@ -22,6 +23,8 @@ async function fetchGetLoveTalk() {
 
 export default {
   name: "index",
+  // eslint-disable-next-line vue/no-unused-components
+  components: {PieEcharts},
   props: { msg: String },
 
   setup() {
