@@ -10,7 +10,7 @@ import i18n from './i18n/i18n'
 import { createPinia } from 'pinia'
 import '@/router/permission'
 import permission from '@/directive/permission/button.js'
-
+import '@/utils/rem'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
